@@ -1,0 +1,45 @@
+{
+  "name": "@fullstackdb/http",
+  "version": "0.0.1",
+  "description": "Simplify work with http/xhr",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "build": "babel src/main.js --out-file index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstackdb/http.git"
+  },
+  "keywords": [
+    "javascript",
+    "http",
+    "xhr",
+    "xmlhttprequest",
+    "data",
+    "crud",
+    "get",
+    "post",
+    "put",
+    "patch"
+  ],
+  "author": "fullstackdb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fullstackdb/http/issues"
+  },
+  "homepage": "https://github.com/fullstackdb/http#readme",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-babili": "0.0.12",
+    "babel-preset-es2015": "^6.24.0",
+    "babili": "0.0.12",
+    "chai": "^3.5.0",
+    "coveralls": "^2.13.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0"
+  }
+}
