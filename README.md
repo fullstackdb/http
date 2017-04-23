@@ -33,7 +33,7 @@ Work on promises and use XMLHttpRequest RESTful (GET, POST, PUT, DELETE)
     })
 
     // delete reguest
-    http.put('http://yoururl', 'identificatorOfItem').then(function(response) {
+    http.delete('http://yoururl', 'identificatorOfItem').then(function(response) {
       // work with response data
     })
 
