@@ -1,32 +1,45 @@
-Tiny Event Emitter
+HTTP 
 =========
 
-A small library that adds possibility to create custom events.
+Small library to work with HTTP on client side easely.
 
-Event system can make your Javascript Applications more flexible and your data flow more predictable.
+Work on promises and use XMLHttpRequest RESTful (GET, POST, PUT, DELETE)
 
 [![Build Status](https://travis-ci.org/fullstackdb/eventEmitter.svg?branch=master)](https://travis-ci.org/fullstackdb/eventEmitter)
 
 ## Installation
 
-  `npm install tiny-event-emitter`
+  `npm install @fullstackdb/http`
 
 ## Usage
 
-    var event = Event.default();
+```javascript
 
-    // subscribe to event `try` and work with data
-    event.when('try', (data) => {
-        console.log('try', data);
+  var http = HTTP.default();
+
+    // get reguest
+    http.get('http://yoururl').then(function(response) {
+      //work with response data
     })
 
-    // emit event `try` with some data that you want to work with
-    event.emit('try', { hasDone: true } )
+    // post reguest
+    http.post('http://yoururl', {key: 'value'}).then(function(response) {
+      // work with response data
+    })
+
+    // put reguest
+    http.put('http://yoururl', 'identificatorOfItem', {key: 'updatedValue'}).then(function(response) {
+      // work with response data
+    })
+
+    // delete reguest
+    http.put('http://yoururl', 'identificatorOfItem').then(function(response) {
+      // work with response data
+    })
 
 
-## Tests
+```
 
-  `npm test`
 
 ## Contributing
 
