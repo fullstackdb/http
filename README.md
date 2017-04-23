@@ -5,7 +5,7 @@ Small library to work with HTTP on client side easely.
 
 Work on promises and use XMLHttpRequest RESTful (GET, POST, PUT, DELETE)
 
-[![Build Status](https://travis-ci.org/fullstackdb/eventEmitter.svg?branch=master)](https://travis-ci.org/fullstackdb/eventEmitter)
+[![Build Status](https://travis-ci.org/fullstackdb/http.svg?branch=master)](https://travis-ci.org/fullstackdb/http)
 
 ## Installation
 
